@@ -4,7 +4,7 @@ Donate link: http://www.presstigers.com
 Tags: events, listing, venue, event calendar, seminar, presentation, event schedule, iCal, Google Calendar, event management
 Requires at least: 4.5
 Requires PHP : 7.0
-Tested up to: 6.4
+Tested up to: 6.7
 Stable tag: 1.5.6
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
