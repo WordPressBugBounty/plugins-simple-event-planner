@@ -79,7 +79,7 @@ class Simple_Event_Planner {
 	public function __construct() {
 
 		$this->simple_event_planner = 'simple-event-planner';
-		$this->version = '1.5.6';
+		$this->version = '1.5.7';
 		$this->event_planner_directory = untrailingslashit( plugin_dir_path( __FILE__ ) );
 		$this->event_planner_url = untrailingslashit( plugins_url( basename( plugin_dir_path( __FILE__ ) ), basename( __FILE__ ) ) );
 

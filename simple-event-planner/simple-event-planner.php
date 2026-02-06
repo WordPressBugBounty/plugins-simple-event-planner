@@ -14,7 +14,7 @@
  * Plugin Name:       Simple Event Planner
  * Plugin URI:        http://www.presstigers.com
  * Description:       A powerful & flexible plugin to create event listing and event calendar on your website in simple & elegant way.
- * Version:           1.5.6
+ * Version:           1.5.7
  * Author:            PressTigers
  * Author URI:        http://www.presstigers.com
  * License:           GPL-2.0+

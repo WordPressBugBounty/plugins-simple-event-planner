@@ -3,9 +3,9 @@ Contributors: PressTigers
 Donate link: http://www.presstigers.com
 Tags: events, listing, venue, event calendar, seminar, presentation, event schedule, iCal, Google Calendar, event management
 Requires at least: 4.5
-Requires PHP : 7.0
-Tested up to: 6.7
-Stable tag: 1.5.6
+Requires PHP : 7.4
+Tested up to: 6.9
+Stable tag: 1.5.7
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -26,6 +26,11 @@ The plugin allows to have a specific number of upcoming events arranged in calen
 
 = Event Listing Shortcode =
 `[event_listing]`
+Use the `type` parameter to filter events. Accepted values are:
+
+- `all` — shows all events (default)
+- `past` — shows past events only
+- `upcoming` — shows upcoming events only
 
 = Event Calendar Shortcode =
 `[event_calendar]`
@@ -125,6 +130,9 @@ Yes, you turnoff search bar with "search" attribute i.e [event_calendar search="
 Yes, you can turn off search bar with "search" attribute i.e [event_listing search="false"]
 
 == Changelog ==
+
+= 1.5.7 =
+* Feature – Introduced the type parameter with three values to help users keep events visible as needed.
 
 = 1.5.6 =
 * Fix - Resolved image displaying issue in case of grid layout.

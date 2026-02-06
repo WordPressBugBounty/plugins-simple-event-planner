@@ -108,6 +108,9 @@ if (!class_exists('Simple_Event_Planner_Post_Type_Event_Listing')) {
                 'pages' => FALSE,
                 'hierarchical' => FALSE,
             );
+            
+            $debug_label = esc_html__('All %s', 'simple-event-planner');
+error_log('Translated label = [' . $debug_label . ']');
 
             // Post Type -> Event Listing -> Label Arguments
             $labels_events = array(

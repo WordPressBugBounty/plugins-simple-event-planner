@@ -49,8 +49,9 @@ class Simple_Event_Planner_Shortcode_Event_Listing {
 		global $event_query;
 
 		// Shortcode Default Array
+                //  type is all, upcoming, past
 		$shortcode_args = array(
-			'type' => 'upcoming',
+			'type' => 'all',
 			'search' => 'true',
 			'event_category' => '',
 			'events_limit' => '-1',
@@ -79,8 +80,6 @@ class Simple_Event_Planner_Shortcode_Event_Listing {
 			'posts_per_page' => esc_attr( $shortcode_args['events_limit'] ),
 			'post_type' => 'event_listing',
 			'post_status' => 'publish',
-			'meta_key' => 'event_start_date_time',
-			'meta_value' => '',
 			'orderby' => 'meta_value',
 			'order' => 'ASC',
 			'paged' => $paged,
@@ -104,9 +103,11 @@ class Simple_Event_Planner_Shortcode_Event_Listing {
 
 		// Extending Argument Array for Event Type
 		if ( 'upcoming' == esc_attr( $shortcode_args['type'] ) ) {
+                        $args['meta_key'] = 'event_start_date_time';
 			$args['meta_value'] = $current_time;
 			$args['meta_compare'] = '>=';
 		} elseif ( 'past' == esc_attr( $shortcode_args['type'] ) ) {
+                        $args['meta_key'] = 'event_start_date_time';
 			$args['meta_value'] = $current_time;
 			$args['meta_compare'] = '<=';
 		}
